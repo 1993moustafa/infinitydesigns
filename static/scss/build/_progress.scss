@@ -1,0 +1,79 @@
+@keyframes progress-bar-stripes {
+  from { background-position: $progress-height 0; }
+  to { background-position: 0 0; }
+}
+
+.progress {
+  display: flex;
+  height: $progress-height;
+  overflow: hidden; // force rounded corners by cropping it
+  font-size: $progress-font-size;
+  background-color: $progress-bg;
+  @include border-radius($progress-border-radius);
+  @include box-shadow($progress-box-shadow);
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $progress-bar-color;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $progress-bar-bg;
+  @include transition($progress-bar-transition);
+}
+
+.progress-bar-striped {
+  @include gradient-striped();
+  background-size: $progress-height $progress-height;
+}
+
+.progress-bar-animated {
+  animation: progress-bar-stripes $progress-bar-animation-timing;
+}
+
+.bullet-progress{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  height: $progress-height;
+  overflow: hidden; // force rounded corners by cropping it
+  font-size: $progress-font-size;
+  background-color: transparent;
+  @include border-radius($progress-border-radius);
+  @include box-shadow($progress-box-shadow);
+  .progress-bar{
+    position: relative;
+    line-height: .938em;
+    display: inline-block;
+    background: none;
+  }
+
+  .bullet{
+    width: .938em;
+    height: .938em;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    vertical-align: middle;
+    border-color: $cerulean;
+    animation-fill-mode: both;
+    margin: 0.2rem;
+    &:nth-child(1){ animation-delay: 0ms }
+    &:nth-child(2){ animation-delay: 50ms }
+    &:nth-child(3){ animation-delay: 100ms }
+    &:nth-child(4){ animation-delay: 145ms }
+    &:nth-child(5){ animation-delay: 175ms }
+    &:nth-child(6){ animation-delay: 210ms }
+    &:nth-child(7){ animation-delay: 240ms }
+    &:nth-child(8){ animation-delay: 265ms }
+    &:nth-child(9){ animation-delay: 290ms }
+    &:nth-child(10){ animation-delay: 310ms }
+  }
+  .fill{
+    background-color: $cerulean;
+    border: 1px;
+  }
+}

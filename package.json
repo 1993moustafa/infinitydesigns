@@ -1,0 +1,46 @@
+{
+  "name": "infinitydesigns",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "next": "^7.0.2",
+    "npm": "^6.4.1",
+    "react": "^16.6.3",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-burger-menu": "^2.5.4",
+    "react-components": "^0.5.1",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "react-scroll": "^1.7.10",
+    "react-wow": "^1.0.0",
+    "reactstrap": "^6.5.0",
+    "styled-components": "^4.1.2"
+  },
+  "scripts": {
+    "start": "next start",
+    "dev": "next",
+    "build": "next build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "scss": "node-sass -w static/scss/style.scss static/css/style.css --output-style compressed"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "style-loader": "^0.23.1"
+  },
+  "description": "Infinitydesign ReactJS App",
+  "main": "gulpfile.js",
+  "keywords": [],
+  "author": "Moustafa Omar",
+  "license": "ISC"
+}
