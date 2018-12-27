@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import { Jumbotron} from 'reactstrap';
 import styled from 'styled-components';
 import ReactWOW from 'react-wow';
-
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import Accordion from './Accordion';
+import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 class JumbotronMineshaft extends Component {
   render() {
     return (
         <div className="col-12 col-lg-8 order-3 order-lg-2 order-1">
           <Jumbotron className="mt-4 mt-lg-0 jumbotron bg-mineshaft rounded-0 box-shadow-block">
-            <h1 className="display-3">About me ik ben mous</h1>
+            <h2 className="display-4">About me</h2>
             <p className="lead">
               Hello! I’m Moustafa Omar a web Developer specializing in front end development 
               Experienced with all stages of the development for dynamic web projects.
@@ -97,21 +97,54 @@ class JumbotronMineshaft extends Component {
                   </dl>
                 </div>
               </div>
-              <hr />
           </Jumbotron>
 
           <Element name="work-experience" className="element">
             <Jumbotron className="mt-4 mt-lg-0 jumbotron bg-mineshaft rounded-0 box-shadow-block">
-              <h1 className="display-3">Hello, world!</h1>
-              <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-              <hr className="my-2" />
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <h2 className="display-4 mb-4">Work Experience</h2>
+              <div className="education">
+                <div className="education-box">
+                  <time className="education-date" dateTime="2014-01T2016-03">
+                  <span>Jan <strong className="text-upper">2014</strong> - Mar <strong>2016</strong></span>
+                  </time>
+                  <div className="education-logo">
+                     <img src="/static/media/capptions.svg" alt="capptions" />
+                  </div>
+                  <span className="education-company">Front-end developers</span>
+                  <p>Your brand is the core of your marketing,
+                     the central theme around your products and services.
+                     Your brand is not your Logo or your Company Name
+                  </p>
+                </div>
+                <div className="education-box">
+                  <time className="education-date" dateTime="2014-01T2016-03">
+                    <span>Jan <strong className="text-upper">2014</strong> - Mar <strong>2016</strong></span>
+                  </time>
+                  <div className="education-logo">
+                     <img src="/static/media/tappan.svg" alt="Tappan" />
+                  </div>
+                  <span className="education-company">Front-end developers</span>
+                  <p>
+                     Your brand is the core of your marketing, the central theme around your products and services.
+                  </p>
+                </div>
+                <div className="education-box">
+                  <time className="education-date" dateTime="2014-01T2016-03">
+                    <span>Jan <strong className="text-upper">2014</strong> - Mar <strong>2016</strong></span>
+                  </time>
+                  <div className="education-logo">
+                     <img src="/static/media/yorcom.png" alt="Yorcom" />
+                  </div>
+                  <span className="education-company">Front-end developers</span>
+                  <p>Your brand is the core of your marketing, the central theme around your products and services.</p>
+                </div>
+              </div>
             </Jumbotron>
           </Element>
 
           <Element name="portfolio" className="element">
             <Jumbotron className="mt-4 mt-lg-0 jumbotron bg-mineshaft rounded-0 box-shadow-block">
-              <h1 className="display-3">Hello, world!</h1>
+              <h2 className="display-4">Hello, world!</h2>
               <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
               <hr className="my-2" />
               <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -120,7 +153,7 @@ class JumbotronMineshaft extends Component {
 
           <Element name="references" className="element">
             <Jumbotron className="mt-4 mt-lg-0 jumbotron bg-mineshaft rounded-0 box-shadow-block">
-              <h1 className="display-3">Hello, world!</h1>
+              <h2 className="display-4">Hello, world!</h2>
               <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
               <hr className="my-2" />
               <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -129,10 +162,11 @@ class JumbotronMineshaft extends Component {
 
           <Element name="contact" className="element">
             <Jumbotron className="mt-4 mt-lg-0 jumbotron bg-mineshaft rounded-0 box-shadow-block">
-              <h1 className="display-3">Hello, world!</h1>
+              <h2 className="display-4">Hello, world!</h2>
               <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
               <hr className="my-2" />
               <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            
             </Jumbotron>
           </Element>
 
@@ -140,5 +174,7 @@ class JumbotronMineshaft extends Component {
     );
   }
 }
+
+
 
 export default JumbotronMineshaft;
