@@ -1,8 +1,6 @@
-
 import Head from 'next/head';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
@@ -10,8 +8,6 @@ import Sidebar from '../components/Sidebar';
 import Jumbotron from '../components/Jumbotron';
 import Sticky from '../components/Sticky';
 import Footer from '../components/Footer';
-
-
 
 export default () => (
 	<div className="main">

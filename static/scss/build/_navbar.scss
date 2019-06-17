@@ -19,9 +19,11 @@
       z-index: 1030;
     }
   }
-  ul{
+
+  ul {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+
     @include media-breakpoint-down(md) {
       justify-content: center;
       align-items: center;
@@ -29,14 +31,17 @@
       display: -ms-flexbox;
       display: flex;
     }
-    li{
+
+    li {
       @include media-breakpoint-down(md) {
         float: left;
       }
-      i{
+
+      i {
         font-size: 2rem;
       }
-      a{
+
+      a {
         color: $white;
       }
     }
@@ -48,19 +53,21 @@
 .navbar-mineshaft {
   box-shadow: 2px 4px 10px rgba(0,0,0,.2);
   z-index: 1000;
+
   .navbar-brand {
     color: $white;
     text-transform: uppercase;
     font-size: 16px;
-    span{
+
+    span {
       color: $cerulean;
     }
     @include hover-focus {
       color: $white;
     }
   }
-  
-  .navbar-toggler{
+
+  .navbar-toggler {
     background: #484848;
     border-radius: 100px;
     width: 50px;
@@ -94,10 +101,12 @@
 
   .navbar-toggler-icon {
     background-image: $navbar-light-toggler-icon-bg;
+    margin-left: -3px;
   }
 
   .navbar-text {
     color: $navbar-light-color;
+
     a {
       color: $navbar-light-active-color;
 
