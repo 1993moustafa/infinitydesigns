@@ -1,13 +1,13 @@
-body{
+body {
   background-position: center center;
   background-size: 900px;
   font-family: 'Quicksand', sans-serif;
   background-image: url('/static/media/bg.svg');
-  background-color: #333;
+  background-color: #333333;
 
 }
 
-.logo{
+.logo {
   width: 40px;
   height: 40px;
 }
@@ -18,26 +18,30 @@ body{
 
 .container {
   max-width: 71.25em;
+
   @include make-container();
 }
-.tooltip{
+
+.tooltip {
   @include media-breakpoint-down(lg) {
     display: none;
     visibility: hidden;
   }
-
 }
+
 // END CONTAINER
-.card{
-  .card-img{
+.card {
+  .card-img {
     width: 200px;
   }
-  button{
+
+  button {
     border-radius: 10em;
   }
 }
-.social-media{
-  a{
+
+.social-media {
+  a {
     background-color: $white;
     padding: 1rem;
     border-radius: 100%;
@@ -45,11 +49,11 @@ body{
 }
 // END CARD IMG
 
-.icon{
+.icon {
   width: 20px;
   height: 20px;
 }
 
-.copyright{
+.copyright {
   color: $white;
 }
