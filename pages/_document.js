@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="stylesheet" href="static/css/style.css" />
           <style>{`body { margin: 0 } /* custom! */`}</style>
-          
+
         </Head>
         <body className="root">
           <Main />

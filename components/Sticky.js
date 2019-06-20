@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { UncontrolledTooltip } from 'reactstrap';
-import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 class Sticky extends Component {
   render() {
-		return (
-			<div className="col-12 col-lg-1 order-1 order-lg-3 nav-sticky">
+    return (
+      <div className="col-12 col-lg-1 order-1 order-lg-3 nav-sticky">
         <ul className="list-unstyled text-center" id="mainNav">
           <li className="py-4 py-lg-0 pb-0 pb-lg-4 mx-3 mx-lg-0">
             <a href="#home" className="ripple">
@@ -19,7 +19,7 @@ class Sticky extends Component {
               <img className="ripple" src="/static/media/briefcase.svg" width="40" height="40" />
               <UncontrolledTooltip placement="right" target="Experience">
                 Experience
-              </UncontrolledTooltip>
+            </UncontrolledTooltip>
             </Link>
           </li>
           <li className="py-4 mx-3 mx-lg-0">
@@ -27,7 +27,7 @@ class Sticky extends Component {
               <img src="/static/media/pencil-case.svg" width="40" height="40" />
               <UncontrolledTooltip placement="right" target="Portfolio">
                 Portfolio
-              </UncontrolledTooltip>
+            </UncontrolledTooltip>
             </Link>
           </li>
           <li className="py-4 mx-3 mx-lg-0">
@@ -35,7 +35,7 @@ class Sticky extends Component {
               <img src="/static/media/quotation.svg" width="40" height="40" />
               <UncontrolledTooltip placement="right" target="References">
                 References
-              </UncontrolledTooltip>
+            </UncontrolledTooltip>
             </Link>
           </li>
           <li className="py-4 mx-3 mx-lg-0">
@@ -43,12 +43,12 @@ class Sticky extends Component {
               <img src="/static/media/letters.svg" width="40" height="40" />
               <UncontrolledTooltip placement="right" target="Contact">
                 Contact
-              </UncontrolledTooltip>
+            </UncontrolledTooltip>
             </Link>
           </li>
         </ul>
       </div>
-		);
+    );
   }
 }
 
