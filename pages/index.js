@@ -9,8 +9,8 @@ import Jumbotron from '../components/Jumbotron';
 import Sticky from '../components/Sticky';
 import Footer from '../components/Footer';
 
-export default () => (w
-  <div className="main">
+export default () => (
+  <div>
     <Header />
     <Navbar />
     <div className="py-5">
