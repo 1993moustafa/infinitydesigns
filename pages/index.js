@@ -9,7 +9,7 @@ import Jumbotron from '../components/Jumbotron';
 import Sticky from '../components/Sticky';
 import Footer from '../components/Footer';
 
-export default () => (
+export default () => (w
   <div className="main">
     <Header />
     <Navbar />
