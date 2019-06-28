@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
@@ -10,7 +11,7 @@ import Sticky from '../components/Sticky';
 import Footer from '../components/Footer';
 
 export default () => (
-  <div className="main">
+  <StyledWrapper>
     <Header />
     <Navbar />
     <div className="py-5">
@@ -23,6 +24,9 @@ export default () => (
       </div>
     </div>
     <Footer />
-  </div>
+  </StyledWrapper>
 )
 
+const StyledWrapper = styled.div`
+  overflow: hidden;
+`
